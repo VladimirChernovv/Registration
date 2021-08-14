@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Registration form</title>
+</head>
+<body>
+  <div class="registration">
+
+    <div class="registration__top">
+      <h1 class="registration__title">Регистрация</h1>
+      <button class="registration__button close-button" type="button">
+        <img class="registration__close-icon" src="./images/close-icon.svg" alt="close-icon">
+      </button>
+    </div>
+
+    <div class="registration__wrapper">
+      <form class="registration__form">
+        <div class="registration__info">
+          <label class="registration__label" for="country">Страна/Регион</label>
+          <select class="registration__select" name="select">
+            <option value="value1">Россия(+3)</option>
+            <option value="value2" selected>Россия(+7)</option>
+            <option value="value3">Россия(+2)</option>
+          </select>
+          <input class="registration__input" type="tel" name="phone" placeholder="Номер телефона">
+        </div>
+        <p class="registration__text">
+          Мы позвоним вам или отправим SMS, чтобы подтвердить номер телефона. Применяются стандартные условия вашего тарифа на прием сообщений и передачу данных.
+        </p>
+        <button class="registration__continue button" type="submit">Продолжить</button>
+      </form>
+
+      <div class="registration__or">или</div>
+
+      <div class="">
+        <button class="registration__authorization button" type="button">
+          <img class="registration__authorization-icon" src="./images/envelope.svg" alt="mail-authorization">
+          С помощью E-mail
+        </button>
+        <button class="registration__authorization button " type="button">
+          <img class="registration__authorization-icon facebook" src="./images/facebook.svg" alt="facebook-authorization">
+          Продолжить через Facebook
+        </button>
+        <button class="registration__authorization button" type="button">
+          <img class="registration__authorization-icon google" src="./images/google.svg" alt="google-authorization">
+          Продолжить через Google
+        </button>
+        <button class="registration__authorization button" type="button">
+          <img class="registration__authorization-icon apple" src="./images/apple.svg" alt="apple-authorization">
+          Продолжить с Apple
+        </button>
+      </div>
+
+      <p class="registration__question">Уже есть аккаунт? <a class="registration__link" href="#">Войти</a></p>
+
+      <div class="registration__footer">
+
+        <div class="registration__create-projects">
+          <h4 class="registration__heading">Создавайте проекты</h4>
+          <a class="registration__lower-link" href="#">
+            <img class="registration__question-icon" src="./images/question-icon.svg" alt="question-icon">
+            <span class="registration__small-text">Организовать Проект</span>
+          </a>
+          <a class="registration__lower-link" href="#">
+            <img class="registration__question-icon" src="./images/question-icon.svg" alt="question-icon">
+            <span class="registration__small-text">Запустить кампанию</span>
+          </a>
+        </div>
+
+        <div class="registration__support">
+          <h4 class="registration__heading">Поддержка</h4>
+          <a class="registration__lower-link" href="#">
+            <img class="registration__question-icon" src="./images/question-icon.svg" alt="question-icon">
+            <span class="registration__small-text">Как все  устроено</span>
+          </a>
+          <a class="registration__lower-link" href="#">
+            <img class="registration__question-icon" src="./images/question-icon.svg" alt="question-icon">
+            <span class="registration__small-text">Помощь</span>
+          </a>
+          <a class="registration__lower-link lower-link" href="#">
+            <img class="registration__question-icon" src="./images/question-icon.svg" alt="question-icon">
+            <div class="registration__box">
+              <span class="registration__small-text">Связаться со службой поддержки</span>
+              <p class="registration__small-paragraph">
+                Поделитесь с нашей командой в чем возникла сложность.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="registration__switch-buttons">
+          <button class="registration__switch-lang button" type="button">
+            <img class="registration__switch-icon" src="./images/language.svg" alt="switch language">
+            Русский (RU)
+          </button>
+          <button class="registration__switch-lang button" type="button">
+            $ USD
+          </button>
+        </div>
+
+        <div class="registration__social">
+          <a class="registration__social-link" href="https://facebook.com/" target="_blank">
+            <img src="./images/facebook-1.svg" alt="facebook-icon">
+          </a>
+          <a class="registration__social-link" href="https://vk.com/" target="_blank">
+            <img src="./images/vk.svg" alt="vk-icon">
+          </a>
+          <a class="registration__social-link" href="https://twitter.com/" target="_blank">
+            <img src="./images/twitter.svg" alt="twitter-icon">
+          </a>
+          <a class="registration__social-link" href="https://www.instagram.com/" target="_blank">
+            <img src="./images/instagram.svg" alt="instagram-icon">
+          </a>
+        </div>
+
+        <ul class="registration__author-links">
+          <li class="registration__author-item">
+            <a class="registration__author-link" href="#">Помощь и поддержка</a>
+          </li>
+          <li class="registration__author-item">
+            <a class="registration__author-link" href="#">Условия предоставления услуг</a>
+          </li>
+          <li class="registration__author-item">
+            <a class="registration__author-link" href="#">Политика конфиденциальности</a>
+          </li>
+        </ul>
+
+        <p class="registration__rights">
+          © 2021 Inc. Все права защищены
+        </p>
+
+        <nav class="registration__navigation">
+          <ul class="registration__navigation-list">
+
+            <li class="registration__navigation-item">
+              <a class="registration__navigation-link" href="#">
+                <!-- <img class="registration__navigation-icon icon" src="./images/search-1.svg" alt="search"> -->
+                <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"
+                    viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve">
+                  <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23
+                    s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92
+                    c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17
+                    s-17-7.626-17-17S14.61,6,23.984,6z"/>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                </svg>
+                <span class="registration__navigation-text">Поиск</span>
+              </a>
+            </li>
+
+            <li class="registration__navigation-item">
+              <a class="registration__navigation-link" href="#">
+                <!-- <img class="registration__navigation-icon icon" src="./images/heart.svg" alt="like"> -->
+                <svg class="icon" width="24" hight="24" viewBox="0 -28 512.001 512" xmlns="http://www.w3.org/2000/svg"><path d="m256 455.515625c-7.289062 0-14.316406-2.640625-19.792969-7.4375-20.683593-18.085937-40.625-35.082031-58.21875-50.074219l-.089843-.078125c-51.582032-43.957031-96.125-81.917969-127.117188-119.3125-34.644531-41.804687-50.78125-81.441406-50.78125-124.742187 0-42.070313 14.425781-80.882813 40.617188-109.292969 26.503906-28.746094 62.871093-44.578125 102.414062-44.578125 29.554688 0 56.621094 9.34375 80.445312 27.769531 12.023438 9.300781 22.921876 20.683594 32.523438 33.960938 9.605469-13.277344 20.5-24.660157 32.527344-33.960938 23.824218-18.425781 50.890625-27.769531 80.445312-27.769531 39.539063 0 75.910156 15.832031 102.414063 44.578125 26.191406 28.410156 40.613281 67.222656 40.613281 109.292969 0 43.300781-16.132812 82.9375-50.777344 124.738281-30.992187 37.398437-75.53125 75.355469-127.105468 119.308594-17.625 15.015625-37.597657 32.039062-58.328126 50.167969-5.472656 4.789062-12.503906 7.429687-19.789062 7.429687zm-112.96875-425.523437c-31.066406 0-59.605469 12.398437-80.367188 34.914062-21.070312 22.855469-32.675781 54.449219-32.675781 88.964844 0 36.417968 13.535157 68.988281 43.882813 105.605468 29.332031 35.394532 72.960937 72.574219 123.476562 115.625l.09375.078126c17.660156 15.050781 37.679688 32.113281 58.515625 50.332031 20.960938-18.253907 41.011719-35.34375 58.707031-50.417969 50.511719-43.050781 94.136719-80.222656 123.46875-115.617188 30.34375-36.617187 43.878907-69.1875 43.878907-105.605468 0-34.515625-11.605469-66.109375-32.675781-88.964844-20.757813-22.515625-49.300782-34.914062-80.363282-34.914062-22.757812 0-43.652344 7.234374-62.101562 21.5-16.441406 12.71875-27.894532 28.796874-34.609375 40.046874-3.453125 5.785157-9.53125 9.238282-16.261719 9.238282s-12.808594-3.453125-16.261719-9.238282c-6.710937-11.25-18.164062-27.328124-34.609375-40.046874-18.449218-14.265626-39.34375-21.5-62.097656-21.5zm0 0"/></svg>
+                <span class="registration__navigation-text">Закладки</span>
+              </a>
+            </li>
+
+            <li class="registration__navigation-item">
+              <a class="registration__navigation-link" href="#">
+                <!-- <img class="registration__navigation-icon" src="./images/project.svg" alt="projects"> -->
+                <svg class="icon" id="Capa_1" enable-background="new 0 0 512 512" height="24" viewBox="0 0 512 512" width="24" xmlns="http://www.w3.org/2000/svg"><g><path d="m123.714 497h-32.714c-9.649 0-17.5-7.851-17.5-17.5v-447c0-9.649 7.851-17.5 17.5-17.5h129.942c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-129.942c-17.92 0-32.5 14.58-32.5 32.5v447c0 17.92 14.58 32.5 32.5 32.5h32.714c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"/><path d="m451.303 105.697-103.5-103.5c-.978-.979-2.344-1.755-3.84-2.052-.059-.059-1.367-.145-1.463-.145h-86.558c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h79.058v71c0 17.92 14.58 32.5 32.5 32.5h71v361c0 9.649-7.851 17.5-17.5 17.5h-262.286c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h262.286c17.92 0 32.5-14.58 32.5-32.5v-368.5c0-1.892-.762-3.869-2.197-5.303zm-83.803-2.197c-9.649 0-17.5-7.851-17.5-17.5v-60.394l77.894 77.894z"/><path d="m386 164.781h-260c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h260c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"/><path d="m386 231.448h-260c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h260c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"/><path d="m386 298.115h-260c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h260c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"/><path d="m386 364.781h-260c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h260c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"/></g></svg>
+                <span class="registration__navigation-text">Проекты</span>
+              </a>
+            </li>
+
+            <li class="registration__navigation-item">
+              <a class="registration__navigation-link" href="#">
+                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.23704 14.1072L9.07726 13.7464L8.32012 13.2337C6.75715 12.1754 5.72727 10.3812 5.72727 8.36364C5.72727 5.13481 8.36208 2.5 11.5909 2.5C14.8197 2.5 17.4545 5.13481 17.4545 8.36364C17.4545 10.3812 16.4247 12.1754 14.8617 13.2337L14.1046 13.7464L14.9448 14.1072C17.867 15.3618 19.9737 18.1819 20.1673 21.5H19.3479C19.205 19.2453 18.1032 17.2534 16.449 15.928L16.1138 15.6594L15.7978 15.9503L11.8773 19.5582L11.8773 19.5582L11.8707 19.5645L11.5909 19.8315L11.3111 19.5645L11.3112 19.5644L11.3045 19.5582L7.38404 15.9503L7.06799 15.6594L6.7328 15.928C5.07864 17.2534 3.97678 19.2453 3.83397 21.5H3.01455C3.20809 18.1819 5.31479 15.3618 8.23704 14.1072ZM14.858 15.6896L15.4142 15.1711L14.7177 14.8659C13.7603 14.4463 12.6973 14.2273 11.5909 14.2273C10.4845 14.2273 9.42153 14.4463 8.46408 14.8659L7.76758 15.1711L8.32387 15.6896L11.25 18.4169L11.5909 18.7346L11.9318 18.4169L14.858 15.6896ZM16.6364 8.36364C16.6364 5.56619 14.3884 3.31818 11.5909 3.31818C8.79346 3.31818 6.54545 5.56619 6.54545 8.36364C6.54545 11.1611 8.79346 13.4091 11.5909 13.4091C14.3884 13.4091 16.6364 11.1611 16.6364 8.36364Z"/>
+                  </svg>
+                <span class="registration__navigation-text">Профиль</span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
